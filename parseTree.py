@@ -81,9 +81,6 @@ class TreeNode:
         if nextnode:
             self.add_node(TreeNode(nextnode))
 
-    def name(self) -> str:
-        return self.name
-
     def next(self) -> list:
         if hasattr(self, "nextlist"):
             return getattr(self, "nextlist")
